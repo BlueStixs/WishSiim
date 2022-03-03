@@ -3,5 +3,5 @@ function load(){
 }
 
 function play(){
-    
+    document.getElementsById("homeScreen").style.display = "none";
 }
