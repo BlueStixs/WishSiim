@@ -47,6 +47,7 @@ html {
 }
 .text p { 
     color: white;
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
     padding : 2px;
@@ -71,6 +72,7 @@ html {
 }
 
 img {
+    display: block;
     width: 20%;
 }
 
