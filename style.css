@@ -54,7 +54,7 @@ html {
     text-align: center;
 }
 
-.playBtn {
+#playBtn {
     background-color: transparent;
     border: 0.5vh solid white;
     border-radius: 3vh;
