@@ -3,7 +3,6 @@ function load(){
 }
 
 function play(){
-    document.getElementByClassName("text").style.display = "none";
-    document.getElementByClassName("playBtn").style.display = "none";
-    document.getElementByClassName("logo").style.display = "none";
+    document.getElementByClassName("homeScreen").style.display = "none";
+    document.getElementByClassName("bg-image home").style.display = "none";
 }
