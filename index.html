@@ -9,25 +9,82 @@
     <script src="script.js"></script>
     <title>Higher or Lower ft. Genshin Characters</title>
 
-<body onload="load()">
+<body onload="loadSite()">
     <div class="bg-image home">
-        <div class="homeScreen">
         <center>
-            <img src="images/icons/logo.png" class="logo">
-            <p>Choose the more popular Genshin Character. <br>Characters range from the Traveler to Arataki Itto in Genshin Impact 2.2. Unfortunately, I don't have access to data beyond October 2021. If you know a way, please DM me on twitter.
-            <br> Note: the recent 5-star character would be Kokomi, but Itto is on this list because of Suske</p>
-            <button class="playBtn" onclick="play()">Play Now</button>
+            <img src="images/icons/logo.png" id="logo" onclick="homePage()">
+            <div id="homeScreen">
+                <p>Choose the more popular Genshin Character.
+                    <br>Characters range from the Traveler to Shenhe.
+                    <br> This data is from October 2021 provided by Genshin Lab
+                    <br> If you know a way to get more recent data, please DM me on twitter.
+                </p>
+                <button class="playBtn" onclick="play()">Play Now</button>
+                <p>
+                    <font color="yellow">Note:</font> the recent 5-star character would be Kokomi, but Shenhe, Gorou,
+                    Itto, etc. are on this list because of <img src="images/icons/suske.png" height="35vh" width="35vh">
+                </p>
+
+            </div>
         </center>
+
+        <div class="theGame">
+            <center>
+                <div class="charImage">
+                    <img id="image1">
+                    <span class="caption">
+                        <p id="character1"></p>
+                        <p id="searches1"></p>
+                    </span>
+                </div>
+                <div class="charImage">
+                    <img id="image2">
+                    <span class="caption">
+                        <p id="character2"></p>
+                        <p id="searches2"></p>
+                        <!--true = higher false = lower-->
+                        <div id="buttons">
+                            <button class="higherLowerBtn" onclick="checkWin(true)">Higher ▲</button><br>
+                            <button class="higherLowerBtn" onclick="checkWin(false)">Lower ▼</button>
+                        </div>
+                    </span>
+                </div>
+            </center>
         </div>
 
+        <div id="win">
+            <center>
+                <h1>You Won! <img src="images/icons/enviChill.png" height="135vh" width="135vh"></h1>
+                <p id="finalscore"></p>
+                <button class="playBtn" onclick="play()">Try Again</button>
+            </center>
+        </div>
+
+        <div id="lose">
+            <center>
+                <h1>You lost <img src="images/icons/enviSad.png" height="135vh" width="135vh"></h1>
+                <p id="finalscore"></p>
+                <button class="playBtn" onclick="play()">Try Again</button>
+            </center>
+        </div>
+        <br>
+
+        <div id="highscore"></div>
+        <div id="currScore"></div>
 
         <div class="footer">
-            <p>Please support the <a href="https://www.higherlowergame.com" target="_blank">official release</a></p>
             <p>Made by <a href="https://www.twitter.com/BlueStixs" target="_blank">BlueStixs</a></p>
-            <p>Subscribe to <a href="https://www.youtube.com/Enviosity?sub_confirmation=1" target="_blank">Enviosity</a></p>
+            <p>Data from <a href="https://www.genshinlab.com/genshin-impact-characters-popularity-index/"
+                    target="_blank">Genshin Lab</a></p>
+            <p>Subscribe to <a href="https://www.youtube.com/Enviosity?sub_confirmation=1" target="_blank">Enviosity</a>
+            </p>
+            <p>Please support the <a href="https://www.higherlowergame.com" target="_blank">official release</a></p>
+
         </div>
     </div>
+
 </body>
+<script src="script.js"></script>
 </head>
 
 </html>
