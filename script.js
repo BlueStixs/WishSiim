@@ -145,9 +145,11 @@ function playerWin() {
             charOne = Math.floor(Math.random() * (charList.length - 1));
             charTwo = null;
             completed = [];
+            score = 0;
             document.getElementById("win").style.display = "block";
             document.getElementById("finalscore").innerHTML = "Your final score: " + score;
             score = 0;
+            document.getElementById("currScore").innerHTML = "Score: " + score;
         }, 1000);
     } else {
         play();
@@ -164,6 +166,7 @@ function playerLose() {
         document.getElementById("lose").style.display = "block";
         document.getElementById("finalscore").innerHTML = "Your final score: " + score;
         score = 0;
+        document.getElementById("currScore").innerHTML = "Score: " + score;
     }, 1000);
 }
 
