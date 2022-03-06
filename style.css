@@ -184,3 +184,15 @@ img:hover {
 #currScore {
     right: 20vh;
 }
+
+#image1, #image2 {
+    transform: translateX(0.1vh);
+    opacity: 0;
+}
+
+#winlose {
+    width: 7vh;
+}
+#suske {
+    width: 5vh;
+}

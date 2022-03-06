@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
     <script src="files/genshin.js"></script>
     <script src="script.js"></script>
     <title>Higher or Lower ft. Genshin Characters</title>
@@ -22,7 +25,7 @@
                 <button class="playBtn" onclick="play()">Play Now</button>
                 <p>
                     <font color="yellow">Note:</font> the recent 5-star character would be Kokomi, but Shenhe, Gorou,
-                    Itto, etc. are on this list because of <img src="images/icons/suske.png" height="35vh" width="35vh">
+                    Itto, etc. are on this list because of <img id="suske" src="images/icons/suske.png">
                 </p>
 
             </div>
@@ -54,7 +57,7 @@
 
         <div id="win">
             <center>
-                <h1>You Won! <img src="images/icons/enviChill.png" height="135vh" width="135vh"></h1>
+                <h1>You Won! <img id="winlose" src="images/icons/enviChill.png"></h1>
                 <p id="finalscore"></p>
                 <button class="playBtn" onclick="play()">Try Again</button>
             </center>
@@ -62,7 +65,7 @@
 
         <div id="lose">
             <center>
-                <h1>You lost <img src="images/icons/enviSad.png" height="135vh" width="135vh"></h1>
+                <h1>You lost <img id="winlose" src="images/icons/enviSad.png"></h1>
                 <p id="finalscore"></p>
                 <button class="playBtn" onclick="play()">Try Again</button>
             </center>
