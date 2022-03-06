@@ -232,14 +232,14 @@ function slideLeft() {
             document.getElementById("searches1").innerHTML = addDecimals(charSearches1) + " searches";
         }, 100);
         setTimeout(function () {
+            document.getElementById("image2").src = charList[charTwo][2];
             document.getElementById("image2").style.transform = "translateX(0)";
         }, 400);
         setTimeout(function () {
             document.getElementById("image2").style.opacity = 1;
-            document.getElementById("image2").src = charList[charTwo][2];
             document.getElementById("character2").innerHTML = charList[charTwo][0];
             document.getElementById("buttons").style.display = "block";
-        }, 800);
+        }, 1000);
     }, 400);
 
 
