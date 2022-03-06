@@ -19,8 +19,6 @@ function loadSite() {
 
     if (!localStorage.clickLink) {
         localStorage.clickLink = 0;
-    } else {
-        localStorage.clickLink = 0;
     }
     console.log("You clicked the website " + localStorage.clickLink + " times");
 
