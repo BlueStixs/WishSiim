@@ -16,12 +16,20 @@ function loadSite() {
     if (!localStorage.highScore) {
         localStorage.highScore = 0;
     }
+
+    if (!localStorage.websiteVisits) {
+        localStorage.websiteVisits = 1;
+    } else {
+        localStorage.websiteVisits = Number(localStorage.websiteVisits)+1;
+    }
+    console.log("You visited this website " + localStorage.websiteVisits + " times");
+
     document.getElementById("highscore").innerHTML = "High Score: " + localStorage.highScore;
     document.getElementById("currScore").innerHTML = "Score: " + score;
 }
 
 function play() {
-    if (localStorage.highScore == 0){
+    if (localStorage.websiteVisits <= 1){
         document.getElementById('sellout').play();
     }
     clearAll();
