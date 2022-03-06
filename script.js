@@ -193,12 +193,12 @@ function makeCharInfoVisible() {
 function fadeIn() {
     document.getElementById("image1").style.opacity = 0;
     document.getElementById("image2").style.opacity = 0;
-
+    document.getElementById("image1").src = charList[charOne][2];
+    
     setTimeout(function () {
         document.getElementById("image1").style.opacity = 1;
         document.getElementById("image2").style.opacity = 1;
 
-        document.getElementById("image1").src = charList[charOne][2];
         document.getElementById("character1").innerHTML = charList[charOne][0];
         document.getElementById("searches1").innerHTML = addDecimals(charSearches1) + " searches";
         document.getElementById("image2").src = charList[charTwo][2];
