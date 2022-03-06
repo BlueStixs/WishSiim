@@ -31,7 +31,7 @@ function selloutMessage(){
 
 }
 function play() {
-    if (localStorage.clickLink <= 1){
+    if (localStorage.clickLink < 1){
         document.getElementById('sellout').play();
     }
     clearAll();
