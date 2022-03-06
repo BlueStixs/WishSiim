@@ -7,7 +7,6 @@ html {
     background-color: white;
     height: 100%;
     margin: 0;
-    overflow: hidden;
 }
 
 .bg-image {
@@ -199,4 +198,5 @@ img:hover {
 
 #sellout {
     display: none;
+    visibility: hidden;
 }

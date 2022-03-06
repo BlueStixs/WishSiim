@@ -21,7 +21,7 @@ function loadSite() {
 }
 
 function play() {
-    if (highScore = 0){
+    if (localStorage.highScore == 0){
         document.getElementById('sellout').play();
     }
     clearAll();
