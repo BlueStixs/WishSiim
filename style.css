@@ -196,3 +196,7 @@ img:hover {
 #suske {
     width: 5vh;
 }
+
+#sellout {
+    display: none;
+}

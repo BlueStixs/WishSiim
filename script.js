@@ -21,6 +21,9 @@ function loadSite() {
 }
 
 function play() {
+    if (highScore = 0){
+        document.getElementById('sellout').play();
+    }
     clearAll();
 
     document.getElementById("logo").style.width = "25vh";
