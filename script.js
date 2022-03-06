@@ -207,7 +207,7 @@ function fadeIn() {
             
             document.getElementById("character2").innerHTML = charList[charTwo][0];
             document.getElementById("buttons").style.display = "block";
-        }, 100);
+        }, 300);
     }, 200);
 }
 
