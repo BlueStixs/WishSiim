@@ -7,8 +7,12 @@ body,
 html {
     background-color: white;
     height: 100%;
-    overflow: hidden; 
     margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 #home {
@@ -116,6 +120,7 @@ button {
 button img {
     width: 30vh;
 }
+
 #wishBtn:hover {
     filter: brightness(0.9);
     cursor: pointer;
