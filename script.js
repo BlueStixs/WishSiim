@@ -33,7 +33,7 @@ function playVideo(vid){
     setTimeout(function(){
         video.style.display ="none";
         document.getElementById("home").style.display = "block";
-
+        
     }, 7000);
 }
 
