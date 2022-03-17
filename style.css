@@ -1,4 +1,5 @@
 * {
+    cursor: url("images/icons/cursor.png"), auto;
     position: relative;
     transition: 0.5s all;
 }
@@ -8,6 +9,7 @@ html {
     background-color: white;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -19,9 +21,19 @@ html {
     display: block;
     min-height: 100%;
     min-width: 100%;
-    background-image: url("images/background/wallpaper.gif");
+    background-image: url("images/background/wallpaper-upscaled.jpg");
     background-size: cover;
     position: relative;
+    z-index: 0;
+}
+
+#wish {
+    display: none;
+    min-height: 110%;
+    min-width: 110%;
+    background-image: url("images/background/wish-bg.webp");
+    background-size: 100%;
+    position: absolute;
     z-index: 0;
 }
 
@@ -132,4 +144,41 @@ button img {
     min-height: 100%;
     min-width: 100%;
     background-size: cover;
+}
+
+#charImg {
+    left: -10vh;
+    position: relative;
+    width: 200vh;
+    transform: scale(2);
+    filter: brightness(0%);
+}
+
+#charInfo {
+    opacity: 0;
+    z-index: 999;
+}
+
+#element {
+    width: 15vh;
+    position:fixed;
+    left: 20vh;
+    top: 50vh;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: genshin;
+    src: url(fonts/genshin.woff);
+  }
+
+#charName {
+    position: absolute;
+    display: inline-block;
+    font-size: 5vh;
+    top: 50vh;
+    left: 33vh;
+    font-family: 'genshin';
+    z-index: 999;
+
 }
