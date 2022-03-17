@@ -68,7 +68,7 @@ function playAnimation(vid) {
             document.getElementById("charInfo").style.transform = "translateX(-10vh)";
             wishAnimationFinished = true;
         }, 800);
-    }, 100);
+    }, 7000);
 }
 
 function getRandomCharacter() {
