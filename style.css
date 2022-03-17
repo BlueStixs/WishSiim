@@ -33,6 +33,7 @@ html {
     min-width: 110%;
     background-image: url("images/background/wish-bg.webp");
     background-size: 100%;
+    opacity: 0;
     position: absolute;
     z-index: 0;
 }
@@ -124,7 +125,7 @@ button {
     border: 0.5vh white;
     border-radius: 3vh;
     display: inline-block;
-    left: 120vh;
+    left: 100vh;
     bottom: -30vh;
     z-index: 9999;
 }
@@ -133,7 +134,7 @@ button img {
     width: 30vh;
 }
 
-#wishBtn:hover {
+button:hover {
     filter: brightness(0.9);
     cursor: pointer;
 }
@@ -161,7 +162,7 @@ button img {
 
 #element {
     width: 15vh;
-    position:fixed;
+    position: fixed;
     left: 20vh;
     top: 50vh;
     z-index: 1;
@@ -170,15 +171,75 @@ button img {
 @font-face {
     font-family: genshin;
     src: url(fonts/genshin.woff);
-  }
+}
 
 #charName {
-    position: absolute;
     display: inline-block;
     font-size: 5vh;
     top: 50vh;
     left: 33vh;
     font-family: 'genshin';
+    position: absolute;
+    text-shadow: 2px 2px black;
     z-index: 999;
 
+}
+
+#exit {
+    background-color: gray;
+    background-size: cover;
+    border: 0.5vh white;
+    bottom: -5vh;
+    font-family: 'genshin';
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 3.5vh; 
+    padding-right: 3.5vh;
+    border-radius: 3vh;
+    display: inline-block;
+    z-index: 9999;
+}
+
+#myInventory {
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0 0 2.5vh rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 30vh;
+    width: 45vh;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    padding: 2vh;
+    top: 41%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 1s all;
+    z-index: 2147483647;
+}
+
+#myInventory p, h1 {
+    color: black;
+    font-family: 'genshin';
+}
+
+#myInventory h1 {
+    color: #C0A376;
+    font-size: 5vh;
+}
+
+#myInventory::-webkit-scrollbar {
+    width: 1vh;
+}
+
+#myInventory::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#myInventory::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#myInventory::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
