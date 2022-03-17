@@ -28,7 +28,7 @@ const charList = [
     ["Rosaria", "4star", "images/characters/rosaria.webp", "cryo"],
     ["Sayu", "4star", "images/characters/sayu.webp", "anemo"],
     ["Sucrose", "4star", "images/characters/sucrose.webp", "anemo"],
-    ["Traveler", "5star", "images/characters/traveler.webp", "kekw"],
+    ["Traveler", "5star", "images/characters/traveler.webp", "KEKW"],
     ["Xiangling", "4star", "images/characters/xiangling.webp", "pyro"],
     ["Xingqiu", "4star", "images/characters/xingqiu.webp", "hydro"],
     ["Xinyan", "4star", "images/characters/xinyan.webp", "pyro"],
