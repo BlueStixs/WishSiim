@@ -106,8 +106,7 @@ function inventory(){
     }
     
     setTimeout(function(){
-        wordCount = 6;
-        currIndex = 6;
+
         document.getElementById("inv").innerHTML = "INVENTORY";
     
         for (var i = 0; i < charUsed.length; i++){
