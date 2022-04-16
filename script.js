@@ -74,15 +74,6 @@ function playAnimation(vid) {
 function getRandomCharacter() {
     var character = Math.floor(Math.random() * (charList.length - 1));
 
-    if (charUsed.length == 0) {
-        for (var i = 0; i < charList.length; i++) {
-            if (charList[i][0] === "Kazuha") {
-                character = i;
-                break;
-            }
-        }
-    }
-
     var monkaW = 0;
     while (charUsed.includes(character)) {
         character = Math.floor(Math.random() * (charList.length - 1));
